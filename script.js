@@ -1,8 +1,14 @@
+// Get nama pengunjung
+const nama = prompt("Silahkan masukan nama: ")
+let namaUser = document.getElementsByTagName("h2")[1]
+namaUser.innerText = nama
+
+
 // Open Invitation Button
 document.getElementById('open-invitation').addEventListener('click', function () {
     document.getElementById('opening-page').classList.add('d-none');
     document.getElementById('invitation-content').classList.remove('d-none');
-
+	document.getElementsByName('h2')
     // Play Background Music
     document.getElementById('background-music').play();
 });
